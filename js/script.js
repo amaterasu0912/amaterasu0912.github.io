@@ -32,11 +32,16 @@ const personalMovieDB = {
     },
     writeYourGenres: function() {
         for(let i = 1; i <= 3; i++){
-            personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр ${i}`);
+            let gener = prompt(`Ваш любимый жанр ${i}`);
+            if (gener == ''||gener == null){
+                console.log('Вы введи некоректные данные или не ввели их вообще');
+                i--;
+            } else {
+             personalMovieDB.genres[i - 1] = gener;
+            }
         }
-        let item;
-        let i;
-        personalMovieDB.genres.forEach(function(item, i , genres){
+
+        personalMovieDB.genres.forEach((item, i ) => {
             console.log(`Любимый жанр ${i + 1} - это  ${item}`);
         });
     },
