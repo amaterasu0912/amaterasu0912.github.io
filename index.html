@@ -8,10 +8,10 @@
     <link href='style.css' rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container_1 main">
             <div class="main__menu">
                  <nav class='main__nav'>
                     <a class='nav__point' href="#">главная</a>
@@ -20,7 +20,7 @@
                     <a class='nav__point' href="#">партнеры театра</a>
                     <a class='nav__point' href="#">контакты</a>
                 </nav>
-                    <p class='phone__number''>+7(963)852-56-83</p>
+                    <p class='phone__number'>+7(963)852-56-83</p>
             </div>
 
             <div class="main__content">
@@ -33,10 +33,63 @@
                     <button class="main__btn"><a class="btn_afisha">афиша</a></button>
                 </div>
                 <div class="slider">
-                    <img src="/img/image 3.jpg">
+                    <ul class="slider-list">
+                        <li class="slider-element"><img src="/img/image 3.jpg"></li>
+                        <li class="slider-element hide"><img src='/img/image 4.png'></li>
+                    </ul>
+                    <div class="slider-arrow-left hide"></div>
+                    <div class="slider-arrow-right hide"></div>
                 </div>
+                
             </div>
             
+    </div>
+    <div class='container__2'>
+        <div class="about">
+            <div class="about__title">
+                <h2><span class = 'gold'>о</span> театре</h2>
+            </div>
+            <div class="about__content">
+                <div class="about__history">
+                    <h3>Самый лучший театр СПБ</h3>
+                    <p>Как свидетельствуют архивные документы, первое каменное<br>
+                    здание Большого театра начали возводить в 1775 году по<br>
+                    проекту Антонио Ринальди. В дальнейшем, после того как<br>
+                    Ринальди упал с лесов и не мог лично наблюдать за ходом<br>
+                    работ, Екатерина II поручила немецкому театральному<br>
+                    декоратору и архитектору Людвигу Филиппу Тишбейну создать<br>
+                    новый проект театра, который и был воплощён архитекторами<br>
+                    Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в<br>
+                    1783 году, хотя, основываясь на других свидетельствах, годом<br>
+                    открытия можно считать 1784 год.</p>
+                </div>
+                <div class="about__theatre">
+                    <h3>Немного о цифрах</h3>
+                    <img src ='/img/armchair 1.png'>
+                    <p><span class = 'gold'>1600</span> посадочных мест</p>
+                    <img src="/img/theater 1.png">
+                    <p><span class = 'gold'>350</span> лет истории</p>
+                </div>
+                <div class="about__img">
+                    <img src="/img/Rectangle 12.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_3">
+        <div class="ourProductions">
+            <div class="ourProductions__title">
+                <h2><span class = 'gold'>Наши</span> постановки</h2>
+            </div>
+            <div class="ourProductions__img">
+                <img src="/img/projects__item.jpg">
+                <img src="/img/projects__item (1).jpg">
+                <img src='/img/projects__item (2).jpg'>
+            </div>
+        </div>
+    </div>
+    <div class="container_4">
+        
     </div>
     <script src='js/script.js'></script>
 </body>
