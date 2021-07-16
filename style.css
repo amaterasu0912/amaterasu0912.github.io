@@ -215,64 +215,24 @@ h3 {
 
 .first__performance{
     background:url(/img/Rectangle\ 15.jpg);
-    position: relative;
 }
-.first__performance:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,.5);
-    z-index: 2;
-  }
+
 
 .second__performance {
     background-image:url(/img/projects__item--active.jpg);
-    position: relative;
 }
-.second__performance:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,.5);
-    z-index: 2;
-  }
+
 
 .third__performance {
     background-image: url(/img/Rectangle\ 16.jpg);
-    position: relative;
 }
-.third__performance:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,.5);
-    z-index: 2;
-  }
+
 
 
 .forth__performance{
-    background-image: url(/img/Rectangle\ 17.png);
-    position: relative;
+    background-image: url(/img/Rectangle\ 17.jpg);
 }
-.forth__performance:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,.5);
-    z-index: 2;
-  }
+
 
 .name__performance{
     position: relative;
@@ -300,4 +260,96 @@ h3 {
     justify-self: start; 
     align-self: center;
     grid-area: date__performance;
+}
+
+.container_4 {
+    width: 1110px;
+    height: 700px;
+    padding-top: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grades {
+    margin-left: auto;
+    margin-right: auto;
+    height: 539px;
+    width: 1000px;
+    background-image:url(/img/Rectangle\ 28.jpg);
+    display: grid; 
+    grid-template-columns: 430px 570px; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "years description";
+}
+
+.years {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 100px 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Y_2018"
+      "Y_2019"
+      "Y_2020"; 
+    grid-area: years;
+  }
+.grades__years{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 98px;
+}
+
+  .Y_2018 {
+    justify-self: center; 
+    align-self: end; 
+    grid-area: Y_2018; 
+  }
+  .Y_2019 {
+    justify-self: center; 
+    align-self: stretch; 
+    grid-area: Y_2019; 
+  }
+  .Y_2020 {
+    justify-self: center; 
+    align-self: start; 
+    grid-area: Y_2020; 
+  }
+  .description {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 190px 349px; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "description__stars"
+      "description__title"; 
+    grid-area: description; 
+  }
+  .description__title {
+    justify-self: stretch; 
+    align-self: start; 
+    grid-area: description__title; 
+  }
+  .description__stars {
+    justify-self: start; 
+    align-self: end; 
+    grid-area: description__stars; 
+  }
+
+.fas {
+    padding-right: 20px;
+}
+
+.description__title{
+    padding-top: 30px;
+}
+
+.description__title__text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
 }
