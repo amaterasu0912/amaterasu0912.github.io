@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bolshoi Theater</title>
-    <link href='style.css' rel="stylesheet">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    
+    <link href='style.css' rel="stylesheet">
+    <link href='adaptive.css' rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <div class="container_1 main">
@@ -32,75 +39,75 @@
                     зданий в Европе XVIII.</p>
                     <button class="main__btn"><a class="btn_afisha">афиша</a></button>
                 </div>
-                <div class="slider">
-                    <ul class="slider-list">
-                        <li class="slider-element"><img src="/img/image 3.jpg"></li>
-                        <li class="slider-element hide"><img src='/img/image 4.png'></li>
-                    </ul>
-                    <div class="slider-arrow-left hide"></div>
-                    <div class="slider-arrow-right hide"></div>
-                </div>
-                
-            </div>
-            
+                    <img class = 'slider' src="img/image 3.jpg">
+                 </div>  
+            </div>   
     </div>
     <div class='container__2'>
         <div class="about">
-            <div class="about__title">
-                <h2><span class = 'gold'>о</span> театре</h2>
-            </div>
-            <div class="about__content">
-                <div class="about__history">
-                    <h3>Самый лучший театр СПБ</h3>
-                    <p>Как свидетельствуют архивные документы, первое каменное<br>
-                    здание Большого театра начали возводить в 1775 году по<br>
-                    проекту Антонио Ринальди. В дальнейшем, после того как<br>
-                    Ринальди упал с лесов и не мог лично наблюдать за ходом<br>
-                    работ, Екатерина II поручила немецкому театральному<br>
-                    декоратору и архитектору Людвигу Филиппу Тишбейну создать<br>
-                    новый проект театра, который и был воплощён архитекторами<br>
-                    Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в<br>
-                    1783 году, хотя, основываясь на других свидетельствах, годом<br>
-                    открытия можно считать 1784 год.</p>
-                </div>
-                <div class="about__theatre">
-                    <h3>Немного о цифрах</h3>
-                    <img src ='/img/armchair 1.png'>
-                    <p><span class = 'gold'>1600</span> посадочных мест</p>
-                    <img src="/img/theater 1.png">
-                    <p><span class = 'gold'>350</span> лет истории</p>
-                </div>
-                <div class="about__img">
-                    <img src="/img/Rectangle 12.jpg">
+            <div class ='test'>
+                <h2 class="about__title"><span class = 'gold'>о</span> театре</h2>
+                <div class="about__content">
+                    <div class="about__history">
+                        <h3>Самый лучший театр СПБ</h3>
+                        <p>Как свидетельствуют архивные документы, первое каменное<br>
+                        здание Большого театра начали возводить в 1775 году по<br>
+                        проекту Антонио Ринальди. В дальнейшем, после того как<br>
+                        Ринальди упал с лесов и не мог лично наблюдать за ходом<br>
+                        работ, Екатерина II поручила немецкому театральному<br>
+                        декоратору и архитектору Людвигу Филиппу Тишбейну создать<br>
+                        новый проект театра, который и был воплощён архитекторами<br>
+                        Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в<br>
+                        1783 году, хотя, основываясь на других свидетельствах, годом<br>
+                        открытия можно считать 1784 год.</p>
+                    </div>
+                    <div class="about__theatre">
+                        <h3>Немного о цифрах</h3>
+                        <img src ='img/armchair 1.png'>
+                        <p><span class = 'gold'>1600</span> посадочных мест</p>
+                        <img src="img/theater 1.png">
+                        <p><span class = 'gold'>350</span> лет истории</p>
+                    </div>
+                        <img class="about__img" src="img/Rectangle 12.jpg">
                 </div>
             </div>
         </div>
     </div>
-    <div class="container_3">
-        <div class="ourProductions">
-            <div class="ourProductions__title">
+        <div class="swiper ourProductions">
+            <div class="ourProductions__title ">
                 <h2><span class = 'gold'>Наши</span> постановки</h2>
             </div>
-            <div class="ourProductions__performance">
-                <div class="performance first__performance">
-                    <p class = 'name__performance'>Оскар 2020</p>
-                    <p class = 'date__performance'>Сентябрь 2020</p>
+            <div class="swiper-wrapper">
+                <div class = 'swiper-slide'>
+                    <a href="#">
+                      <img src="img/Rectangle 15.jpg">  
+                    </a>
+                    <p class = 'name__performance'>оскар 2020</p>
+                    <p class = 'date__performance'>сентябрь 2020</p>
                 </div>
-                <div class="performance second__performance">
-                    <p class = 'name__performance'>Щелкунчик</p>
-                    <p class = 'date__performance'>Декабрь 2020</p>
+                <div class = 'swiper-slide'>
+                    <a href="#">
+                      <img src="img/projects__item--active.jpg">  
+                    </a>
+                    <p class = 'name__performance'>золушка</p>
+                    <p class = 'date__performance'>январь 2020</p>
                 </div>
-                <div class="performance third__performance">
-                    <p class = 'name__performance'>Золотой грамофон</p>
-                    <p class = 'date__performance'>Июль 2020</p>
+                <div class = 'swiper-slide'>
+                    <a href="#">
+                        <img src="img/Rectangle 16.jpg">
+                    </a>
+                    <p class = 'name__performance'>золотой грамофон</p>
+                    <p class = 'date__performance'>июль 2020</p>
                 </div>
-                <div class="performance forth__performance">
-                    <p class = 'name__performance'>Евгений Онегин</p>
-                    <p class = 'date__performance'>Май 2020</p>
+                <div class = 'swiper-slide'>
+                    <a href="#">
+                       <img src="img/Rectangle 17.jpg"> 
+                    </a>
+                    <p class = 'name__performance'>щелкунчик</p>
+                    <p class = 'date__performance'>май 2020</p>
                 </div>
             </div>
         </div>
-    </div>
     <div class = 'container_4'>
         <div class="grades">
             <div class = 'years'>
@@ -124,28 +131,28 @@
             </div>  
         </div>
     </div>
-    <div class = 'container_5'>
+    <!-- <div class = 'container_5'>
         <div class="partners">
             <div class="partners__title">
                 <h2><span class = 'gold'>Партнеры</span> театра</h2>
             </div>
             <div class="partners__logo">
                 <div class="first__row">
-                    <img class="logo first_row_first_logo" src="/img/logo.png">
-                    <img class="logo first_row_second_logo" src="/img/logo.png">
-                    <img class="logo first_row_third_logo" src="/img/logo.png">
-                    <img class="logo first_row_forth_logo" src="/img/logo.png">
+                    <a class = 'logo first_row_first_logo' href ='#'><img src="img/logo.png"></a>
+                    <a class = 'logo first_row_first_logo' href ='#'><img src="img/logo.png"></a>
+                    <a class = 'logo first_row_first_logo' href ='#'><img src="img/logo.png"></a>
+                    <a class = 'logo first_row_first_logo' href ='#'><img src="img/logo.png"></a>
                 </div>
                 <div class="second__row">
-                    <img class="logo second_row_first_logo" src="/img/logo.png">
-                    <img class="logo second_row_second_logo" src="/img/logo.png">
-                    <img class="logo second_row_third_logo" src="/img/logo.png">
-                    <img class="logo second_row_forth_logo" src="/img/logo.png">
+                    <a class = 'logo first_row_first_logo' href ='#'><img src="img/logo.png"></a>
+                    <a class = 'logo first_row_first_logo' href ='#'><img src="img/logo.png"></a>
+                    <a class = 'logo first_row_first_logo' href ='#'><img src="img/logo.png"></a>
+                    <a class = 'logo first_row_first_logo' href ='#'><img src="img/logo.png"></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container_6">
+    </div> -->
+    <!-- <div class="container_6">
         <footer>
             <div class="footer__title">
                 <h2><span class ='gold'>Стать</span> меценатом</h2>
@@ -157,21 +164,22 @@
                     <p>info@theater.ru</p>
                     <p>г. санкт-петербург, невский 140</p>
                 </div>
-                <div class="footer__user_contacts">
-                    <input></input>
-                    <input></input>
-                    <input></input>
-                    <input></input>
-                    <p>* Ваши данные не будут переданы третьим лицам, 100%<br>
-                        вероятность. Конфиденциальность мы гарантируем, и защищаем<br>
-                        персональные данные согласно законку ФЗ-52.</p>
-                    <textarea></textarea>
-                    <button>Отправить</button>
-                </div>
+                <form class="footer__user_contacts" action="">
+                        <input type = 'text'></input>
+                        <input type = 'text'></input>
+                        <input type = 'text'></input>
+                        <input type = 'text'></input>
+                        <p>* Ваши данные не будут переданы третьим лицам, 100%<br>
+                            вероятность. Конфиденциальность мы гарантируем, и защищаем<br>
+                            персональные данные согласно законку ФЗ-52.</p>
+                        <textarea></textarea>
+                        <button class="main__btn">Отправить</button>
+                </form>
             </div>
         </footer>
-    </div>
-    <script src="https://kit.fontawesome.com/67a4a7201f.js" crossorigin="anonymous"></script>
+    </div> -->
+    <script src="https://kit.fontawesome.com/144fd3fce8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src='js/script.js'></script>
 </body>
 </html>
