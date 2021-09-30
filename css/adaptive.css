@@ -21,27 +21,71 @@
     padding: 0;
     margin-top: 50px;
   }
-
-  .slider {
-    margin-left: 100px;
+  .content {
+    margin-right: 100px;
   }
 
+  .main__content {
+    margin-top: 107px;
+    margin-left: 80px;
+  }
+
+  .test {
+    padding-left: 50px;
+  }
+
+  .about {
+    margin-left: 190px;
+  }
+
+  .container_4 {
+  margin-left: 150px;
+  }
 }
+
+
+
+@media only screen and (max-width: 1310px) {
+  .content {
+    margin-right: 25px;
+  }
+  .about {
+    width: auto;
+  }
+
+  .about__content{
+    justify-content: space-around;
+  }
+    
+  .about__img {
+    display: none;
+  }
+  
+  .container_4 {
+    width: 992px;
+    height: 550px;
+    margin: 0 auto 0;
+  }
+
+  .grades {
+    margin-left: 50px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .slider {
     display: none;
   }
-  
 
   .main__menu {
     flex-direction: column;
-    width: 720px;
-    margin-left: auto;
-    margin-right: 109px;
+    width: auto;
+    margin-left: 190px;
   }
 
-  .nav__point {
-    margin-right: 30px;
+  .main__nav {
+    display: flex;
+    align-items: center;
   }
 
   .phone__number {
@@ -52,21 +96,14 @@
   }
 
   .main__content {
-    margin-top: 231px;
+    margin-top: 193px;
     width: 540px;
-    margin-left: 191px;
+    display: block;
+    margin: 193px auto 0px;
   }
 
-  .about__img {
-    display: none;
-  }
-
-  .about {
-    width: auto;
-  }
-
-  .about__content{
-    justify-content: center;
+  .content {
+    margin-right: 0px;
   }
 
   .about__theatre {
@@ -80,12 +117,7 @@
   .ourProductions {
     margin-left: 100px
   }
-  
-  .container_4 {
-    width: 992px;
-    height: 550px;
-    margin: 0 auto;
-  }
+
 
   .grades {
     width: 100%;
