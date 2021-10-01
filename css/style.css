@@ -248,7 +248,11 @@ body {
 }
 
 .about__title {
+    width: 200px;
+    height: 65px;
     margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about h2 {
@@ -278,8 +282,17 @@ body {
     height: 292px;
 }
 
-h3 {
+.about__content h3 {
     padding-bottom: 40px;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 
@@ -382,24 +395,20 @@ h3 {
 
 
 .container_4 {
-    width: 100%;
-    max-width: 1110px;
-    height: 700px;
-    padding-top: 150px;
+    width: auto;
+    height: 550px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 150px 0;
 }
 
 .grades {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 535px;
+    margin: 0 auto;
+    width: 1100px;
+    height: 550px;
     background-image: url(/img/Rectangle\ 28.jpg);
     background-size: 100%;
     display: grid; 
-    grid-template-columns: 430px 560px; 
+    grid-template-columns: 430px 550px; 
     grid-template-rows: 100%; 
     gap: 0px 0px; 
     grid-template-areas: 
@@ -488,13 +497,16 @@ h3 {
 .partners{
     margin-left: auto;
     margin-right: auto;
-    width: auto;
-    max-width: 1050px;
-    height: 437px;
+    width: 1050px;
+    height: 100%;
 }
 
 .partners__title {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 90px;
+    width: 380px;
+    height: 65px;
 }
 
 .partners__title h2{
@@ -509,10 +521,13 @@ h3 {
 }
 
 .partners__logo{
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 272px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px 80px;
 }
 
 .logo img {
@@ -523,29 +538,12 @@ h3 {
 .logo {
     width: 200px;
     height: 96px;
-    margin-top: 80px;
-    margin-left: 78px;
 } 
 
-.logo:nth-child(1),.logo:nth-child(2),.logo:nth-child(3),.logo:nth-child(4) {
-    margin-top: 0px;
-}
-
-.logo:nth-child(1),.logo:nth-child(5) {
-    margin-left: 0px;
-}
-
-.container_6 {
+footer {
     margin: 120px auto;
     max-width: 1110px;
     height: 355px;
-}
-
-.footer {
-    width: 100%;
-    height: 100%;
-    display:flex;
-    justify-content: center;
 }
 
 .footer__title {
@@ -607,7 +605,8 @@ h3 {
     display: flex;
     flex-flow: column wrap;
     height: 100px;
-    gap: 30px 0;
+    gap: 30px 30px;
+    justify-content: space-between;
 }
 
 .footer__user_contacts input {
@@ -651,6 +650,7 @@ h3 {
 .footer_form_btn {
     display: flex;
     margin-top: 40px;
+    justify-content: space-between;
 }
 
 .footer_form_btn p {
