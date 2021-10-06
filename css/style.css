@@ -271,10 +271,60 @@ body {
 
 .about__history {
     margin-right: 30px;
+    width: 445px;
+    height: 210px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
 }
+
+.about__history h3 {
+    height: 23px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: left !important;
+}
+
+
 
 .about__theatre{
     margin-right: 30px;
+}
+
+.about__theatre_title {
+    width: 260px;
+    height: 23px;
+}
+
+.about__theatre_title h3 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: left !important;  
+}
+
+.about__theatre_content {
+    width: 190px;
+    height: 17px;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    
+}
+
+.flex_width_730px_container {
+    width: 166px;
+    height: 150px;
 }
 
 .about__img {
@@ -296,11 +346,13 @@ body {
 }
 
 
+
 .swiper {
     width: auto;
     height: 715px;
     z-index: 0 !important;
     margin-left: 150px !important;
+    margin-bottom: 150px;
 }
 
 .ourProductions__title {
